@@ -55,7 +55,7 @@ section.version2 {
   padding: 3rem;
   border: 2px double gray;
   border-radius: 50%;
-  background: rgb(29, 24, 24) url(/img/logo.png) no-repeat;
+  background: rgb(29, 24, 24) url(../img/logo.png) no-repeat;
   background-size: contain;
   background-position: 50% 70%;
   position: relative;
@@ -115,7 +115,7 @@ section.version2 {
   height: 300px;
   border: 5px solid #fff;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.2) url(/img/wolf.png) no-repeat bottom center;
+  background: rgba(0, 0, 0, 0.2) url(../img/wolf.png) no-repeat bottom center;
 }
 .riscos {
   width: 100%;
