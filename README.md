@@ -10,3 +10,7 @@ adicionado funcionalidades em **JavaScript** puro usando a função Date;
 
 *Alan Campos - 13/11/2021*
 
+
+* refatorei o projeto em 15/03/2022*  versão 2.0
+
+![Layout](img/v2.png)

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 1rem;
+}
+section.version1,.version2 {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  font-family: Courier, monospace;  
+}
+section.version2 {  
+  background-color: #333;
+  color: white;
+}
+
+/*versão1*/
+.version1 {
+  text-align: center;
+}
+.version1 main .clock {
+  width: 300px;
+  height: 300px;
+  font-family: Courier, monospace;
+}
+.version1 h1 {
+  color: #333;
+}
+
+.version1 .content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  padding: 3rem;
+  border: 2px double gray;
+  border-radius: 50%;
+  background: rgb(29, 24, 24) url(/img/logo.png) no-repeat;
+  background-size: contain;
+  background-position: 50% 70%;
+  position: relative;
+}
+
+.version1 input {
+  text-align: center;
+  font-size: 2rem;
+  width: 12rem;
+  border-radius: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: #d7f205;
+  animation: blinker;
+}
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.piscar {
+  animation: blinker 1s infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 1, 1);
+}
+#display-month-day {
+  position: absolute;
+  right: -3rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.911);
+  border-radius: 1rem;
+  color: #b68d4a;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  padding: 10px;
+  flex-direction: column;
+  box-sizing: border-box;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+/*versão 2 */
+.version2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.relogio {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2) url(/img/wolf.png) no-repeat bottom center;
+}
+.riscos {
+  width: 100%;
+  height: 100%;
+  padding-left: 50%;
+  padding-top: 50%;
+  margin-top: -3px;
+}
+.risco {
+  width: 145px;
+  height: 5px;
+  position: absolute;
+  transform-origin: left;
+  display: flex;
+  justify-content: flex-end;
+}
+.risco .ponto {
+  width: 15px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.ponteiros {
+  width: 100%;
+  height: 100%;
+  padding-left: 50%;
+  padding-top: 50%;
+  margin-top: -100%;
+  position: relative;
+}
+.p {
+  transform-origin: left;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.p_s {
+  width: 100px;
+  height: 3px;
+  background-color: #f00;
+}
+.p_m {
+  width: 120px;
+  height: 7px;
+  background-color: #d7f205;
+}
+.p_h {
+  width: 70px;
+  height: 10px;
+  background-color: #d7f205;
+}
+.encaixe {
+  width: 20px;
+  height: 20px;
+  background-color: #d7f205;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+.digital {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 20px;
+  z-index: 0;
+}
+.data {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  z-index: 0;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  padding: 3rem;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.473);
+  font-size: 15px;
+}
